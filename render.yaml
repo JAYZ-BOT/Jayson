@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: marwa-sprintbot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
