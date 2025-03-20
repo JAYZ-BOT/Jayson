@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: aviator-predictor-bot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    envVars:
+      - key: BOT_TOKEN
+        value: "YOUR_ACTUAL_BOT_TOKEN"
+      - key: WEBHOOK_URL
+        value: "https://aviator-bot.onrender.com/YOUR_ACTUAL_BOT_TOKEN"
