@@ -1,1 +1,0 @@
-# main.py - Telegram bot logic with 1xBet targeting, GIFs, and profit reset
