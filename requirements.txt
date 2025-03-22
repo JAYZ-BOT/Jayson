@@ -3,6 +3,6 @@ Flask
 xgboost
 scikit-learn
 pandas
-gunicornflask
+gunicorn
 requests
 gunicorn
