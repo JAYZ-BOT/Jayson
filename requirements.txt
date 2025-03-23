@@ -1,7 +1,0 @@
-flask
-joblib
-pandas
-scikit-learn
-pyTelegramBotAPI
-apscheduler
-gunicorn
