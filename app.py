@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from apscheduler.schedulers.background import BackgroundScheduler
 from utils import send_prediction, reset_daily_profit, collect_live_data
 from retrain import auto_retrain
@@ -16,6 +16,12 @@ scheduler.start()
 @app.route("/")
 def home():
     return "✅ Aviator Predictor Running with Auto-Retrain & Data Collection"
+
+# ✅ Add the retraining endpoint
+@app.route("/train", methods=["POST"])
+def retrain_model():
+    auto_retrain()
+    return jsonify({"message": "✅ Model retrained successfully"}), 200
 
 if __name__ == "__main__":
     app.run()
