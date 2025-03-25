@@ -1,3 +1,0 @@
-"""
-Aviator Predictor Package Initialization
-"""
